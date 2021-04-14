@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import UserNotifications
+
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        print("started \n")
+        registerForPushNotifications()
+        return Text("Hello, world! 123")
             .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        print("started \n")
+        return ContentView()
     }
 }
