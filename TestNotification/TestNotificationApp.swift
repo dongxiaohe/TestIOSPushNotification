@@ -25,6 +25,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
           print("got remote notification")
       
         }
+        
+        UIApplication.shared.applicationIconBadgeNumber = 100
         return true
     }
     func application(
